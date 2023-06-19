@@ -1,0 +1,29 @@
+
+---
+#hyperparameters
+
+lr: 0.0002
+gamma: 0.98
+max_episode: 10000
+batch_size: 64
+buffer_limit: 4000
+initial_exp: 1000
+
+
+n_rollout: 10
+
+n_train_processes: [3] # number of independent agents. (for training)
+update_interval: [5]  # Collect data during 'update_interval steps' and proceed with training.
+max_train_ep: 300  # max episode for training.
+max_test_ep: 400
+metric: score
+mode: max
+num_samples: 10
+alg: A3C_ER
+# training variables
+WB_API_KEY: 4e3347402696210ecee7127921ff40f175a18270
+project: A3C-v1
+
+...
+
+

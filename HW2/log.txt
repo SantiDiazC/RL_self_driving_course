@@ -1,0 +1,490 @@
+(PD803_COURSE) C:\Users\HRI\PycharmProjects\PD803_COURSE\HW2>python -m pip install -U "mujoco-py<1.50.2,>=1.50.1"
+Collecting mujoco-py<1.50.2,>=1.50.1
+  Using cached mujoco-py-1.50.1.68.tar.gz (120 kB)
+Requirement already satisfied: glfw>=1.4.0 in c:\users\hri\anaconda3\envs\pd803_course\lib\site-packages (from mujoco-py<1.50.2,>=
+1.50.1) (2.5.3)
+Requirement already satisfied: numpy>=1.11 in c:\users\hri\anaconda3\envs\pd803_course\lib\site-packages (from mujoco-py<1.50.2,>=
+1.50.1) (1.22.3)
+Requirement already satisfied: Cython>=0.27.2 in c:\users\hri\anaconda3\envs\pd803_course\lib\site-packages (from mujoco-py<1.50.2
+,>=1.50.1) (0.29.30)
+Requirement already satisfied: imageio>=2.1.2 in c:\users\hri\anaconda3\envs\pd803_course\lib\site-packages (from mujoco-py<1.50.2
+,>=1.50.1) (2.19.2)
+Requirement already satisfied: cffi>=1.10 in c:\users\hri\anaconda3\envs\pd803_course\lib\site-packages (from mujoco-py<1.50.2,>=1
+.50.1) (1.15.0)
+Requirement already satisfied: lockfile>=0.12.2 in c:\users\hri\anaconda3\envs\pd803_course\lib\site-packages (from mujoco-py<1.50
+.2,>=1.50.1) (0.12.2)
+Requirement already satisfied: pycparser in c:\users\hri\anaconda3\envs\pd803_course\lib\site-packages (from cffi>=1.10->mujoco-py
+<1.50.2,>=1.50.1) (2.21)
+Requirement already satisfied: pillow>=8.3.2 in c:\users\hri\anaconda3\envs\pd803_course\lib\site-packages (from imageio>=2.1.2->m
+ujoco-py<1.50.2,>=1.50.1) (9.0.1)
+Building wheels for collected packages: mujoco-py
+  Building wheel for mujoco-py (setup.py) ... error
+  ERROR: Command errored out with exit status 1:
+   command: 'C:\Users\HRI\anaconda3\envs\PD803_COURSE\python.exe' -u -c 'import io, os, sys, setuptools, tokenize; sys.argv[0] = '
+"'"'C:\\Users\\HRI\\AppData\\Local\\Temp\\pip-install-aan2846c\\mujoco-py_3ab1539c49264543b93970cc83c09d04\\setup.py'"'"'; __file_
+_='"'"'C:\\Users\\HRI\\AppData\\Local\\Temp\\pip-install-aan2846c\\mujoco-py_3ab1539c49264543b93970cc83c09d04\\setup.py'"'"';f = g
+etattr(tokenize, '"'"'open'"'"', open)(__file__) if os.path.exists(__file__) else io.StringIO('"'"'from setuptools import setup; s
+etup()'"'"');code = f.read().replace('"'"'\r\n'"'"', '"'"'\n'"'"');f.close();exec(compile(code, __file__, '"'"'exec'"'"'))' bdist_
+wheel -d 'C:\Users\HRI\AppData\Local\Temp\pip-wheel-ubfb5yri'
+       cwd: C:\Users\HRI\AppData\Local\Temp\pip-install-aan2846c\mujoco-py_3ab1539c49264543b93970cc83c09d04\
+  Complete output (428 lines):
+  running bdist_wheel
+  running build
+  warning: mujoco_py\generated\../pxd\mjmodel.pxd:99:4: 'mjtDisableBit' redeclared
+  warning: mujoco_py\generated\../pxd\mjmodel.pxd:114:4: 'mjtEnableBit' redeclared
+  warning: mujoco_py\generated\../pxd\mjmodel.pxd:121:4: 'mjtJoint' redeclared
+  warning: mujoco_py\generated\../pxd\mjmodel.pxd:127:4: 'mjtGeom' redeclared
+  warning: mujoco_py\generated\../pxd\mjmodel.pxd:149:4: 'mjtCamLight' redeclared
+  warning: mujoco_py\generated\../pxd\mjmodel.pxd:157:4: 'mjtTexture' redeclared
+  warning: mujoco_py\generated\../pxd\mjmodel.pxd:163:4: 'mjtIntegrator' redeclared
+  warning: mujoco_py\generated\../pxd\mjmodel.pxd:168:4: 'mjtCollision' redeclared
+  warning: mujoco_py\generated\../pxd\mjmodel.pxd:174:4: 'mjtCone' redeclared
+  warning: mujoco_py\generated\../pxd\mjmodel.pxd:179:4: 'mjtJacobian' redeclared
+  warning: mujoco_py\generated\../pxd\mjmodel.pxd:185:4: 'mjtSolver' redeclared
+  warning: mujoco_py\generated\../pxd\mjmodel.pxd:191:4: 'mjtImp' redeclared
+  warning: mujoco_py\generated\../pxd\mjmodel.pxd:198:4: 'mjtRef' redeclared
+  warning: mujoco_py\generated\../pxd\mjmodel.pxd:203:4: 'mjtEq' redeclared
+  warning: mujoco_py\generated\../pxd\mjmodel.pxd:211:4: 'mjtWrap' redeclared
+  warning: mujoco_py\generated\../pxd\mjmodel.pxd:220:4: 'mjtTrn' redeclared
+  warning: mujoco_py\generated\../pxd\mjmodel.pxd:230:4: 'mjtDyn' redeclared
+  warning: mujoco_py\generated\../pxd\mjmodel.pxd:237:4: 'mjtGain' redeclared
+  warning: mujoco_py\generated\../pxd\mjmodel.pxd:242:4: 'mjtBias' redeclared
+  warning: mujoco_py\generated\../pxd\mjmodel.pxd:248:4: 'mjtObj' redeclared
+  warning: mujoco_py\generated\../pxd\mjmodel.pxd:274:4: 'mjtConstraint' redeclared
+  warning: mujoco_py\generated\../pxd\mjmodel.pxd:285:4: 'mjtConstraintState' redeclared
+  warning: mujoco_py\generated\../pxd\mjmodel.pxd:294:4: 'mjtSensor' redeclared
+  warning: mujoco_py\generated\../pxd\mjmodel.pxd:338:4: 'mjtStage' redeclared
+  warning: mujoco_py\generated\../pxd\mjmodel.pxd:345:4: 'mjtDataType' redeclared
+  warning: mujoco_py\generated\../pxd\mjmodel.pxd:99:4: 'mjtDisableBit' redeclared
+  warning: mujoco_py\generated\../pxd\mjmodel.pxd:114:4: 'mjtEnableBit' redeclared
+  warning: mujoco_py\generated\../pxd\mjmodel.pxd:121:4: 'mjtJoint' redeclared
+  warning: mujoco_py\generated\../pxd\mjmodel.pxd:127:4: 'mjtGeom' redeclared
+  warning: mujoco_py\generated\../pxd\mjmodel.pxd:149:4: 'mjtCamLight' redeclared
+  warning: mujoco_py\generated\../pxd\mjmodel.pxd:157:4: 'mjtTexture' redeclared
+  warning: mujoco_py\generated\../pxd\mjmodel.pxd:163:4: 'mjtIntegrator' redeclared
+  warning: mujoco_py\generated\../pxd\mjmodel.pxd:168:4: 'mjtCollision' redeclared
+  warning: mujoco_py\generated\../pxd\mjmodel.pxd:174:4: 'mjtCone' redeclared
+  warning: mujoco_py\generated\../pxd\mjmodel.pxd:179:4: 'mjtJacobian' redeclared
+  warning: mujoco_py\generated\../pxd\mjmodel.pxd:185:4: 'mjtSolver' redeclared
+  warning: mujoco_py\generated\../pxd\mjmodel.pxd:191:4: 'mjtImp' redeclared
+  warning: mujoco_py\generated\../pxd\mjmodel.pxd:198:4: 'mjtRef' redeclared
+  warning: mujoco_py\generated\../pxd\mjmodel.pxd:203:4: 'mjtEq' redeclared
+  warning: mujoco_py\generated\../pxd\mjmodel.pxd:211:4: 'mjtWrap' redeclared
+  warning: mujoco_py\generated\../pxd\mjmodel.pxd:220:4: 'mjtTrn' redeclared
+  warning: mujoco_py\generated\../pxd\mjmodel.pxd:230:4: 'mjtDyn' redeclared
+  warning: mujoco_py\generated\../pxd\mjmodel.pxd:237:4: 'mjtGain' redeclared
+  warning: mujoco_py\generated\../pxd\mjmodel.pxd:242:4: 'mjtBias' redeclared
+  warning: mujoco_py\generated\../pxd\mjmodel.pxd:248:4: 'mjtObj' redeclared
+  warning: mujoco_py\generated\../pxd\mjmodel.pxd:274:4: 'mjtConstraint' redeclared
+  warning: mujoco_py\generated\../pxd\mjmodel.pxd:285:4: 'mjtConstraintState' redeclared
+  warning: mujoco_py\generated\../pxd\mjmodel.pxd:294:4: 'mjtSensor' redeclared
+  warning: mujoco_py\generated\../pxd\mjmodel.pxd:338:4: 'mjtStage' redeclared
+  warning: mujoco_py\generated\../pxd\mjmodel.pxd:345:4: 'mjtDataType' redeclared
+  warning: mujoco_py\generated\../pxd\mjmodel.pxd:75:4: 'mjtNum' redeclared
+  warning: mujoco_py\generated\../pxd\mjmodel.pxd:77:10: 'mjPI' redeclared
+  warning: mujoco_py\generated\../pxd\mjmodel.pxd:78:10: 'mjMAXVAL' redeclared
+  warning: mujoco_py\generated\../pxd\mjmodel.pxd:79:10: 'mjMINMU' redeclared
+  warning: mujoco_py\generated\../pxd\mjmodel.pxd:80:10: 'mjMINIMP' redeclared
+  warning: mujoco_py\generated\../pxd\mjmodel.pxd:81:10: 'mjMAXIMP' redeclared
+  warning: mujoco_py\generated\../pxd\mjmodel.pxd:82:10: 'mjMAXCONPAIR' redeclared
+  warning: mujoco_py\generated\../pxd\mjmodel.pxd:83:10: 'mjMAXVFS' redeclared
+  warning: mujoco_py\generated\../pxd\mjmodel.pxd:84:10: 'mjMAXVFSNAME' redeclared
+  warning: mujoco_py\generated\../pxd\mjmodel.pxd:87:10: 'mjNEQDATA' redeclared
+  warning: mujoco_py\generated\../pxd\mjmodel.pxd:88:10: 'mjNDYN' redeclared
+  warning: mujoco_py\generated\../pxd\mjmodel.pxd:89:10: 'mjNGAIN' redeclared
+  warning: mujoco_py\generated\../pxd\mjmodel.pxd:90:10: 'mjNBIAS' redeclared
+  warning: mujoco_py\generated\../pxd\mjmodel.pxd:91:10: 'mjNREF' redeclared
+  warning: mujoco_py\generated\../pxd\mjmodel.pxd:92:10: 'mjNIMP' redeclared
+  warning: mujoco_py\generated\../pxd\mjmodel.pxd:93:10: 'mjNSOLVER' redeclared
+  warning: mujoco_py\generated\../pxd\mjmodel.pxd:96:4: 'mjtByte' redeclared
+  warning: mujoco_py\generated\../pxd\mjmodel.pxd:100:8: 'mjDSBL_CONSTRAINT' redeclared
+  warning: mujoco_py\generated\../pxd\mjmodel.pxd:101:8: 'mjDSBL_EQUALITY' redeclared
+  warning: mujoco_py\generated\../pxd\mjmodel.pxd:102:8: 'mjDSBL_FRICTIONLOSS' redeclared
+  warning: mujoco_py\generated\../pxd\mjmodel.pxd:103:8: 'mjDSBL_LIMIT' redeclared
+  warning: mujoco_py\generated\../pxd\mjmodel.pxd:104:8: 'mjDSBL_CONTACT' redeclared
+  warning: mujoco_py\generated\../pxd\mjmodel.pxd:105:8: 'mjDSBL_PASSIVE' redeclared
+  warning: mujoco_py\generated\../pxd\mjmodel.pxd:106:8: 'mjDSBL_GRAVITY' redeclared
+  warning: mujoco_py\generated\../pxd\mjmodel.pxd:107:8: 'mjDSBL_CLAMPCTRL' redeclared
+  warning: mujoco_py\generated\../pxd\mjmodel.pxd:108:8: 'mjDSBL_WARMSTART' redeclared
+  warning: mujoco_py\generated\../pxd\mjmodel.pxd:109:8: 'mjDSBL_FILTERPARENT' redeclared
+  warning: mujoco_py\generated\../pxd\mjmodel.pxd:110:8: 'mjDSBL_ACTUATION' redeclared
+  warning: mujoco_py\generated\../pxd\mjmodel.pxd:111:8: 'mjDSBL_REFSAFE' redeclared
+  warning: mujoco_py\generated\../pxd\mjmodel.pxd:112:10: 'mjNDISABLE' redeclared
+  warning: mujoco_py\generated\../pxd\mjmodel.pxd:115:8: 'mjENBL_OVERRIDE' redeclared
+  warning: mujoco_py\generated\../pxd\mjmodel.pxd:116:8: 'mjENBL_ENERGY' redeclared
+  warning: mujoco_py\generated\../pxd\mjmodel.pxd:117:8: 'mjENBL_FWDINV' redeclared
+  warning: mujoco_py\generated\../pxd\mjmodel.pxd:118:8: 'mjENBL_SENSORNOISE' redeclared
+  warning: mujoco_py\generated\../pxd\mjmodel.pxd:119:10: 'mjNENABLE' redeclared
+  warning: mujoco_py\generated\../pxd\mjmodel.pxd:122:8: 'mjJNT_FREE' redeclared
+  warning: mujoco_py\generated\../pxd\mjmodel.pxd:123:8: 'mjJNT_BALL' redeclared
+  warning: mujoco_py\generated\../pxd\mjmodel.pxd:124:8: 'mjJNT_SLIDE' redeclared
+  warning: mujoco_py\generated\../pxd\mjmodel.pxd:125:8: 'mjJNT_HINGE' redeclared
+  warning: mujoco_py\generated\../pxd\mjmodel.pxd:129:8: 'mjGEOM_PLANE' redeclared
+  warning: mujoco_py\generated\../pxd\mjmodel.pxd:130:8: 'mjGEOM_HFIELD' redeclared
+  warning: mujoco_py\generated\../pxd\mjmodel.pxd:131:8: 'mjGEOM_SPHERE' redeclared
+  warning: mujoco_py\generated\../pxd\mjmodel.pxd:132:8: 'mjGEOM_CAPSULE' redeclared
+  warning: mujoco_py\generated\../pxd\mjmodel.pxd:133:8: 'mjGEOM_ELLIPSOID' redeclared
+  warning: mujoco_py\generated\../pxd\mjmodel.pxd:134:8: 'mjGEOM_CYLINDER' redeclared
+  warning: mujoco_py\generated\../pxd\mjmodel.pxd:135:8: 'mjGEOM_BOX' redeclared
+  warning: mujoco_py\generated\../pxd\mjmodel.pxd:136:8: 'mjGEOM_MESH' redeclared
+  warning: mujoco_py\generated\../pxd\mjmodel.pxd:138:8: 'mjNGEOMTYPES' redeclared
+  warning: mujoco_py\generated\../pxd\mjmodel.pxd:141:8: 'mjGEOM_ARROW' redeclared
+  warning: mujoco_py\generated\../pxd\mjmodel.pxd:142:8: 'mjGEOM_ARROW1' redeclared
+  warning: mujoco_py\generated\../pxd\mjmodel.pxd:143:8: 'mjGEOM_ARROW2' redeclared
+  warning: mujoco_py\generated\../pxd\mjmodel.pxd:144:8: 'mjGEOM_LABEL' redeclared
+  warning: mujoco_py\generated\../pxd\mjmodel.pxd:146:8: 'mjGEOM_NONE' redeclared
+  warning: mujoco_py\generated\../pxd\mjmodel.pxd:150:8: 'mjCAMLIGHT_FIXED' redeclared
+  warning: mujoco_py\generated\../pxd\mjmodel.pxd:151:8: 'mjCAMLIGHT_TRACK' redeclared
+  warning: mujoco_py\generated\../pxd\mjmodel.pxd:152:8: 'mjCAMLIGHT_TRACKCOM' redeclared
+  warning: mujoco_py\generated\../pxd\mjmodel.pxd:153:8: 'mjCAMLIGHT_TARGETBODY' redeclared
+  warning: mujoco_py\generated\../pxd\mjmodel.pxd:154:8: 'mjCAMLIGHT_TARGETBODYCOM' redeclared
+  warning: mujoco_py\generated\../pxd\mjmodel.pxd:158:8: 'mjTEXTURE_2D' redeclared
+  warning: mujoco_py\generated\../pxd\mjmodel.pxd:159:8: 'mjTEXTURE_CUBE' redeclared
+  warning: mujoco_py\generated\../pxd\mjmodel.pxd:160:8: 'mjTEXTURE_SKYBOX' redeclared
+  warning: mujoco_py\generated\../pxd\mjmodel.pxd:164:8: 'mjINT_EULER' redeclared
+  warning: mujoco_py\generated\../pxd\mjmodel.pxd:165:8: 'mjINT_RK4' redeclared
+  warning: mujoco_py\generated\../pxd\mjmodel.pxd:169:8: 'mjCOL_ALL' redeclared
+  warning: mujoco_py\generated\../pxd\mjmodel.pxd:170:8: 'mjCOL_PAIR' redeclared
+  warning: mujoco_py\generated\../pxd\mjmodel.pxd:171:8: 'mjCOL_DYNAMIC' redeclared
+  warning: mujoco_py\generated\../pxd\mjmodel.pxd:175:8: 'mjCONE_PYRAMIDAL' redeclared
+  warning: mujoco_py\generated\../pxd\mjmodel.pxd:176:8: 'mjCONE_ELLIPTIC' redeclared
+  warning: mujoco_py\generated\../pxd\mjmodel.pxd:180:8: 'mjJAC_DENSE' redeclared
+  warning: mujoco_py\generated\../pxd\mjmodel.pxd:181:8: 'mjJAC_SPARSE' redeclared
+  warning: mujoco_py\generated\../pxd\mjmodel.pxd:182:8: 'mjJAC_AUTO' redeclared
+  warning: mujoco_py\generated\../pxd\mjmodel.pxd:186:8: 'mjSOL_PGS' redeclared
+  warning: mujoco_py\generated\../pxd\mjmodel.pxd:187:8: 'mjSOL_CG' redeclared
+  warning: mujoco_py\generated\../pxd\mjmodel.pxd:188:8: 'mjSOL_NEWTON' redeclared
+  warning: mujoco_py\generated\../pxd\mjmodel.pxd:192:8: 'mjIMP_CONSTANT' redeclared
+  warning: mujoco_py\generated\../pxd\mjmodel.pxd:193:8: 'mjIMP_SIGMOID' redeclared
+  warning: mujoco_py\generated\../pxd\mjmodel.pxd:194:8: 'mjIMP_LINEAR' redeclared
+  warning: mujoco_py\generated\../pxd\mjmodel.pxd:195:8: 'mjIMP_USER' redeclared
+  warning: mujoco_py\generated\../pxd\mjmodel.pxd:199:8: 'mjREF_SPRING' redeclared
+  warning: mujoco_py\generated\../pxd\mjmodel.pxd:200:8: 'mjREF_USER' redeclared
+  warning: mujoco_py\generated\../pxd\mjmodel.pxd:204:8: 'mjEQ_CONNECT' redeclared
+  warning: mujoco_py\generated\../pxd\mjmodel.pxd:205:8: 'mjEQ_WELD' redeclared
+  warning: mujoco_py\generated\../pxd\mjmodel.pxd:206:8: 'mjEQ_JOINT' redeclared
+  warning: mujoco_py\generated\../pxd\mjmodel.pxd:207:8: 'mjEQ_TENDON' redeclared
+  warning: mujoco_py\generated\../pxd\mjmodel.pxd:208:8: 'mjEQ_DISTANCE' redeclared
+  warning: mujoco_py\generated\../pxd\mjmodel.pxd:212:8: 'mjWRAP_NONE' redeclared
+  warning: mujoco_py\generated\../pxd\mjmodel.pxd:213:8: 'mjWRAP_JOINT' redeclared
+  warning: mujoco_py\generated\../pxd\mjmodel.pxd:214:8: 'mjWRAP_PULLEY' redeclared
+  warning: mujoco_py\generated\../pxd\mjmodel.pxd:215:8: 'mjWRAP_SITE' redeclared
+  warning: mujoco_py\generated\../pxd\mjmodel.pxd:216:8: 'mjWRAP_SPHERE' redeclared
+  warning: mujoco_py\generated\../pxd\mjmodel.pxd:217:8: 'mjWRAP_CYLINDER' redeclared
+  warning: mujoco_py\generated\../pxd\mjmodel.pxd:221:8: 'mjTRN_JOINT' redeclared
+  warning: mujoco_py\generated\../pxd\mjmodel.pxd:222:8: 'mjTRN_JOINTINPARENT' redeclared
+  warning: mujoco_py\generated\../pxd\mjmodel.pxd:223:8: 'mjTRN_SLIDERCRANK' redeclared
+  warning: mujoco_py\generated\../pxd\mjmodel.pxd:224:8: 'mjTRN_TENDON' redeclared
+  warning: mujoco_py\generated\../pxd\mjmodel.pxd:225:8: 'mjTRN_SITE' redeclared
+  warning: mujoco_py\generated\../pxd\mjmodel.pxd:227:8: 'mjTRN_UNDEFINED' redeclared
+  warning: mujoco_py\generated\../pxd\mjmodel.pxd:231:8: 'mjDYN_NONE' redeclared
+  warning: mujoco_py\generated\../pxd\mjmodel.pxd:232:8: 'mjDYN_INTEGRATOR' redeclared
+  warning: mujoco_py\generated\../pxd\mjmodel.pxd:233:8: 'mjDYN_FILTER' redeclared
+  warning: mujoco_py\generated\../pxd\mjmodel.pxd:234:8: 'mjDYN_USER' redeclared
+  warning: mujoco_py\generated\../pxd\mjmodel.pxd:238:8: 'mjGAIN_FIXED' redeclared
+  warning: mujoco_py\generated\../pxd\mjmodel.pxd:239:8: 'mjGAIN_USER' redeclared
+  warning: mujoco_py\generated\../pxd\mjmodel.pxd:243:8: 'mjBIAS_NONE' redeclared
+  warning: mujoco_py\generated\../pxd\mjmodel.pxd:244:8: 'mjBIAS_AFFINE' redeclared
+  warning: mujoco_py\generated\../pxd\mjmodel.pxd:245:8: 'mjBIAS_USER' redeclared
+  warning: mujoco_py\generated\../pxd\mjmodel.pxd:249:8: 'mjOBJ_UNKNOWN' redeclared
+  warning: mujoco_py\generated\../pxd\mjmodel.pxd:250:8: 'mjOBJ_BODY' redeclared
+  warning: mujoco_py\generated\../pxd\mjmodel.pxd:251:8: 'mjOBJ_XBODY' redeclared
+  warning: mujoco_py\generated\../pxd\mjmodel.pxd:252:8: 'mjOBJ_JOINT' redeclared
+  warning: mujoco_py\generated\../pxd\mjmodel.pxd:253:8: 'mjOBJ_DOF' redeclared
+  warning: mujoco_py\generated\../pxd\mjmodel.pxd:254:8: 'mjOBJ_GEOM' redeclared
+  warning: mujoco_py\generated\../pxd\mjmodel.pxd:255:8: 'mjOBJ_SITE' redeclared
+  warning: mujoco_py\generated\../pxd\mjmodel.pxd:256:8: 'mjOBJ_CAMERA' redeclared
+  warning: mujoco_py\generated\../pxd\mjmodel.pxd:257:8: 'mjOBJ_LIGHT' redeclared
+  warning: mujoco_py\generated\../pxd\mjmodel.pxd:258:8: 'mjOBJ_MESH' redeclared
+  warning: mujoco_py\generated\../pxd\mjmodel.pxd:259:8: 'mjOBJ_HFIELD' redeclared
+  warning: mujoco_py\generated\../pxd\mjmodel.pxd:260:8: 'mjOBJ_TEXTURE' redeclared
+  warning: mujoco_py\generated\../pxd\mjmodel.pxd:261:8: 'mjOBJ_MATERIAL' redeclared
+  warning: mujoco_py\generated\../pxd\mjmodel.pxd:262:8: 'mjOBJ_PAIR' redeclared
+  warning: mujoco_py\generated\../pxd\mjmodel.pxd:263:8: 'mjOBJ_EXCLUDE' redeclared
+  warning: mujoco_py\generated\../pxd\mjmodel.pxd:264:8: 'mjOBJ_EQUALITY' redeclared
+  warning: mujoco_py\generated\../pxd\mjmodel.pxd:265:8: 'mjOBJ_TENDON' redeclared
+  warning: mujoco_py\generated\../pxd\mjmodel.pxd:266:8: 'mjOBJ_ACTUATOR' redeclared
+  warning: mujoco_py\generated\../pxd\mjmodel.pxd:267:8: 'mjOBJ_SENSOR' redeclared
+  warning: mujoco_py\generated\../pxd\mjmodel.pxd:268:8: 'mjOBJ_NUMERIC' redeclared
+  warning: mujoco_py\generated\../pxd\mjmodel.pxd:269:8: 'mjOBJ_TEXT' redeclared
+  warning: mujoco_py\generated\../pxd\mjmodel.pxd:270:8: 'mjOBJ_TUPLE' redeclared
+  warning: mujoco_py\generated\../pxd\mjmodel.pxd:271:8: 'mjOBJ_KEY' redeclared
+  warning: mujoco_py\generated\../pxd\mjmodel.pxd:275:8: 'mjCNSTR_EQUALITY' redeclared
+  warning: mujoco_py\generated\../pxd\mjmodel.pxd:276:8: 'mjCNSTR_FRICTION_DOF' redeclared
+  warning: mujoco_py\generated\../pxd\mjmodel.pxd:277:8: 'mjCNSTR_FRICTION_TENDON' redeclared
+  warning: mujoco_py\generated\../pxd\mjmodel.pxd:278:8: 'mjCNSTR_LIMIT_JOINT' redeclared
+  warning: mujoco_py\generated\../pxd\mjmodel.pxd:279:8: 'mjCNSTR_LIMIT_TENDON' redeclared
+  warning: mujoco_py\generated\../pxd\mjmodel.pxd:280:8: 'mjCNSTR_CONTACT_FRICTIONLESS' redeclared
+  warning: mujoco_py\generated\../pxd\mjmodel.pxd:281:8: 'mjCNSTR_CONTACT_PYRAMIDAL' redeclared
+  warning: mujoco_py\generated\../pxd\mjmodel.pxd:282:8: 'mjCNSTR_CONTACT_ELLIPTIC' redeclared
+  warning: mujoco_py\generated\../pxd\mjmodel.pxd:286:8: 'mjCNSTRSTATE_SATISFIED' redeclared
+  warning: mujoco_py\generated\../pxd\mjmodel.pxd:287:8: 'mjCNSTRSTATE_QUADRATIC' redeclared
+  warning: mujoco_py\generated\../pxd\mjmodel.pxd:288:8: 'mjCNSTRSTATE_LINEARNEG' redeclared
+  warning: mujoco_py\generated\../pxd\mjmodel.pxd:289:8: 'mjCNSTRSTATE_LINEARPOS' redeclared
+  warning: mujoco_py\generated\../pxd\mjmodel.pxd:290:8: 'mjCNSTRSTATE_CONE' redeclared
+  warning: mujoco_py\generated\../pxd\mjmodel.pxd:296:8: 'mjSENS_TOUCH' redeclared
+  warning: mujoco_py\generated\../pxd\mjmodel.pxd:297:8: 'mjSENS_ACCELEROMETER' redeclared
+  warning: mujoco_py\generated\../pxd\mjmodel.pxd:298:8: 'mjSENS_VELOCIMETER' redeclared
+  warning: mujoco_py\generated\../pxd\mjmodel.pxd:299:8: 'mjSENS_GYRO' redeclared
+  warning: mujoco_py\generated\../pxd\mjmodel.pxd:300:8: 'mjSENS_FORCE' redeclared
+  warning: mujoco_py\generated\../pxd\mjmodel.pxd:301:8: 'mjSENS_TORQUE' redeclared
+  warning: mujoco_py\generated\../pxd\mjmodel.pxd:302:8: 'mjSENS_MAGNETOMETER' redeclared
+  warning: mujoco_py\generated\../pxd\mjmodel.pxd:303:8: 'mjSENS_RANGEFINDER' redeclared
+  warning: mujoco_py\generated\../pxd\mjmodel.pxd:306:8: 'mjSENS_JOINTPOS' redeclared
+  warning: mujoco_py\generated\../pxd\mjmodel.pxd:307:8: 'mjSENS_JOINTVEL' redeclared
+  warning: mujoco_py\generated\../pxd\mjmodel.pxd:308:8: 'mjSENS_TENDONPOS' redeclared
+  warning: mujoco_py\generated\../pxd\mjmodel.pxd:309:8: 'mjSENS_TENDONVEL' redeclared
+  warning: mujoco_py\generated\../pxd\mjmodel.pxd:310:8: 'mjSENS_ACTUATORPOS' redeclared
+  warning: mujoco_py\generated\../pxd\mjmodel.pxd:311:8: 'mjSENS_ACTUATORVEL' redeclared
+  warning: mujoco_py\generated\../pxd\mjmodel.pxd:312:8: 'mjSENS_ACTUATORFRC' redeclared
+  warning: mujoco_py\generated\../pxd\mjmodel.pxd:315:8: 'mjSENS_BALLQUAT' redeclared
+  warning: mujoco_py\generated\../pxd\mjmodel.pxd:316:8: 'mjSENS_BALLANGVEL' redeclared
+  warning: mujoco_py\generated\../pxd\mjmodel.pxd:319:8: 'mjSENS_FRAMEPOS' redeclared
+  warning: mujoco_py\generated\../pxd\mjmodel.pxd:320:8: 'mjSENS_FRAMEQUAT' redeclared
+  warning: mujoco_py\generated\../pxd\mjmodel.pxd:321:8: 'mjSENS_FRAMEXAXIS' redeclared
+  warning: mujoco_py\generated\../pxd\mjmodel.pxd:322:8: 'mjSENS_FRAMEYAXIS' redeclared
+  warning: mujoco_py\generated\../pxd\mjmodel.pxd:323:8: 'mjSENS_FRAMEZAXIS' redeclared
+  warning: mujoco_py\generated\../pxd\mjmodel.pxd:324:8: 'mjSENS_FRAMELINVEL' redeclared
+  warning: mujoco_py\generated\../pxd\mjmodel.pxd:325:8: 'mjSENS_FRAMEANGVEL' redeclared
+  warning: mujoco_py\generated\../pxd\mjmodel.pxd:326:8: 'mjSENS_FRAMELINACC' redeclared
+  warning: mujoco_py\generated\../pxd\mjmodel.pxd:327:8: 'mjSENS_FRAMEANGACC' redeclared
+  warning: mujoco_py\generated\../pxd\mjmodel.pxd:330:8: 'mjSENS_SUBTREECOM' redeclared
+  warning: mujoco_py\generated\../pxd\mjmodel.pxd:331:8: 'mjSENS_SUBTREELINVEL' redeclared
+  warning: mujoco_py\generated\../pxd\mjmodel.pxd:332:8: 'mjSENS_SUBTREEANGMOM' redeclared
+  warning: mujoco_py\generated\../pxd\mjmodel.pxd:335:8: 'mjSENS_USER' redeclared
+  warning: mujoco_py\generated\../pxd\mjmodel.pxd:339:8: 'mjSTAGE_NONE' redeclared
+  warning: mujoco_py\generated\../pxd\mjmodel.pxd:340:8: 'mjSTAGE_POS' redeclared
+  warning: mujoco_py\generated\../pxd\mjmodel.pxd:341:8: 'mjSTAGE_VEL' redeclared
+  warning: mujoco_py\generated\../pxd\mjmodel.pxd:342:8: 'mjSTAGE_ACC' redeclared
+  warning: mujoco_py\generated\../pxd\mjmodel.pxd:346:8: 'mjDATATYPE_REAL' redeclared
+  warning: mujoco_py\generated\../pxd\mjmodel.pxd:347:8: 'mjDATATYPE_POSITIVE' redeclared
+  warning: mujoco_py\generated\../pxd\mjmodel.pxd:348:8: 'mjDATATYPE_AXIS' redeclared
+  warning: mujoco_py\generated\../pxd\mjmodel.pxd:349:8: 'mjDATATYPE_QUAT' redeclared
+  warning: mujoco_py\generated\../pxd\mjmodel.pxd:75:4: 'mjtNum' redeclared
+  warning: mujoco_py\generated\../pxd\mjmodel.pxd:77:10: 'mjPI' redeclared
+  warning: mujoco_py\generated\../pxd\mjmodel.pxd:78:10: 'mjMAXVAL' redeclared
+  warning: mujoco_py\generated\../pxd\mjmodel.pxd:79:10: 'mjMINMU' redeclared
+  warning: mujoco_py\generated\../pxd\mjmodel.pxd:80:10: 'mjMINIMP' redeclared
+  warning: mujoco_py\generated\../pxd\mjmodel.pxd:81:10: 'mjMAXIMP' redeclared
+  warning: mujoco_py\generated\../pxd\mjmodel.pxd:82:10: 'mjMAXCONPAIR' redeclared
+  warning: mujoco_py\generated\../pxd\mjmodel.pxd:83:10: 'mjMAXVFS' redeclared
+  warning: mujoco_py\generated\../pxd\mjmodel.pxd:84:10: 'mjMAXVFSNAME' redeclared
+  warning: mujoco_py\generated\../pxd\mjmodel.pxd:87:10: 'mjNEQDATA' redeclared
+  warning: mujoco_py\generated\../pxd\mjmodel.pxd:88:10: 'mjNDYN' redeclared
+  warning: mujoco_py\generated\../pxd\mjmodel.pxd:89:10: 'mjNGAIN' redeclared
+  warning: mujoco_py\generated\../pxd\mjmodel.pxd:90:10: 'mjNBIAS' redeclared
+  warning: mujoco_py\generated\../pxd\mjmodel.pxd:91:10: 'mjNREF' redeclared
+  warning: mujoco_py\generated\../pxd\mjmodel.pxd:92:10: 'mjNIMP' redeclared
+  warning: mujoco_py\generated\../pxd\mjmodel.pxd:93:10: 'mjNSOLVER' redeclared
+  warning: mujoco_py\generated\../pxd\mjmodel.pxd:96:4: 'mjtByte' redeclared
+  warning: mujoco_py\generated\../pxd\mjmodel.pxd:100:8: 'mjDSBL_CONSTRAINT' redeclared
+  warning: mujoco_py\generated\../pxd\mjmodel.pxd:101:8: 'mjDSBL_EQUALITY' redeclared
+  warning: mujoco_py\generated\../pxd\mjmodel.pxd:102:8: 'mjDSBL_FRICTIONLOSS' redeclared
+  warning: mujoco_py\generated\../pxd\mjmodel.pxd:103:8: 'mjDSBL_LIMIT' redeclared
+  warning: mujoco_py\generated\../pxd\mjmodel.pxd:104:8: 'mjDSBL_CONTACT' redeclared
+  warning: mujoco_py\generated\../pxd\mjmodel.pxd:105:8: 'mjDSBL_PASSIVE' redeclared
+  warning: mujoco_py\generated\../pxd\mjmodel.pxd:106:8: 'mjDSBL_GRAVITY' redeclared
+  warning: mujoco_py\generated\../pxd\mjmodel.pxd:107:8: 'mjDSBL_CLAMPCTRL' redeclared
+  warning: mujoco_py\generated\../pxd\mjmodel.pxd:108:8: 'mjDSBL_WARMSTART' redeclared
+  warning: mujoco_py\generated\../pxd\mjmodel.pxd:109:8: 'mjDSBL_FILTERPARENT' redeclared
+  warning: mujoco_py\generated\../pxd\mjmodel.pxd:110:8: 'mjDSBL_ACTUATION' redeclared
+  warning: mujoco_py\generated\../pxd\mjmodel.pxd:111:8: 'mjDSBL_REFSAFE' redeclared
+  warning: mujoco_py\generated\../pxd\mjmodel.pxd:112:10: 'mjNDISABLE' redeclared
+  warning: mujoco_py\generated\../pxd\mjmodel.pxd:115:8: 'mjENBL_OVERRIDE' redeclared
+  warning: mujoco_py\generated\../pxd\mjmodel.pxd:116:8: 'mjENBL_ENERGY' redeclared
+  warning: mujoco_py\generated\../pxd\mjmodel.pxd:117:8: 'mjENBL_FWDINV' redeclared
+  warning: mujoco_py\generated\../pxd\mjmodel.pxd:118:8: 'mjENBL_SENSORNOISE' redeclared
+  warning: mujoco_py\generated\../pxd\mjmodel.pxd:119:10: 'mjNENABLE' redeclared
+  warning: mujoco_py\generated\../pxd\mjmodel.pxd:122:8: 'mjJNT_FREE' redeclared
+  warning: mujoco_py\generated\../pxd\mjmodel.pxd:123:8: 'mjJNT_BALL' redeclared
+  warning: mujoco_py\generated\../pxd\mjmodel.pxd:124:8: 'mjJNT_SLIDE' redeclared
+  warning: mujoco_py\generated\../pxd\mjmodel.pxd:125:8: 'mjJNT_HINGE' redeclared
+  warning: mujoco_py\generated\../pxd\mjmodel.pxd:129:8: 'mjGEOM_PLANE' redeclared
+  warning: mujoco_py\generated\../pxd\mjmodel.pxd:130:8: 'mjGEOM_HFIELD' redeclared
+  warning: mujoco_py\generated\../pxd\mjmodel.pxd:131:8: 'mjGEOM_SPHERE' redeclared
+  warning: mujoco_py\generated\../pxd\mjmodel.pxd:132:8: 'mjGEOM_CAPSULE' redeclared
+  warning: mujoco_py\generated\../pxd\mjmodel.pxd:133:8: 'mjGEOM_ELLIPSOID' redeclared
+  warning: mujoco_py\generated\../pxd\mjmodel.pxd:134:8: 'mjGEOM_CYLINDER' redeclared
+  warning: mujoco_py\generated\../pxd\mjmodel.pxd:135:8: 'mjGEOM_BOX' redeclared
+  warning: mujoco_py\generated\../pxd\mjmodel.pxd:136:8: 'mjGEOM_MESH' redeclared
+  warning: mujoco_py\generated\../pxd\mjmodel.pxd:138:8: 'mjNGEOMTYPES' redeclared
+  warning: mujoco_py\generated\../pxd\mjmodel.pxd:141:8: 'mjGEOM_ARROW' redeclared
+  warning: mujoco_py\generated\../pxd\mjmodel.pxd:142:8: 'mjGEOM_ARROW1' redeclared
+  warning: mujoco_py\generated\../pxd\mjmodel.pxd:143:8: 'mjGEOM_ARROW2' redeclared
+  warning: mujoco_py\generated\../pxd\mjmodel.pxd:144:8: 'mjGEOM_LABEL' redeclared
+  warning: mujoco_py\generated\../pxd\mjmodel.pxd:146:8: 'mjGEOM_NONE' redeclared
+  warning: mujoco_py\generated\../pxd\mjmodel.pxd:150:8: 'mjCAMLIGHT_FIXED' redeclared
+  warning: mujoco_py\generated\../pxd\mjmodel.pxd:151:8: 'mjCAMLIGHT_TRACK' redeclared
+  warning: mujoco_py\generated\../pxd\mjmodel.pxd:152:8: 'mjCAMLIGHT_TRACKCOM' redeclared
+  warning: mujoco_py\generated\../pxd\mjmodel.pxd:153:8: 'mjCAMLIGHT_TARGETBODY' redeclared
+  warning: mujoco_py\generated\../pxd\mjmodel.pxd:154:8: 'mjCAMLIGHT_TARGETBODYCOM' redeclared
+  warning: mujoco_py\generated\../pxd\mjmodel.pxd:158:8: 'mjTEXTURE_2D' redeclared
+  warning: mujoco_py\generated\../pxd\mjmodel.pxd:159:8: 'mjTEXTURE_CUBE' redeclared
+  warning: mujoco_py\generated\../pxd\mjmodel.pxd:160:8: 'mjTEXTURE_SKYBOX' redeclared
+  warning: mujoco_py\generated\../pxd\mjmodel.pxd:164:8: 'mjINT_EULER' redeclared
+  warning: mujoco_py\generated\../pxd\mjmodel.pxd:165:8: 'mjINT_RK4' redeclared
+  warning: mujoco_py\generated\../pxd\mjmodel.pxd:169:8: 'mjCOL_ALL' redeclared
+  warning: mujoco_py\generated\../pxd\mjmodel.pxd:170:8: 'mjCOL_PAIR' redeclared
+  warning: mujoco_py\generated\../pxd\mjmodel.pxd:171:8: 'mjCOL_DYNAMIC' redeclared
+  warning: mujoco_py\generated\../pxd\mjmodel.pxd:175:8: 'mjCONE_PYRAMIDAL' redeclared
+  warning: mujoco_py\generated\../pxd\mjmodel.pxd:176:8: 'mjCONE_ELLIPTIC' redeclared
+  warning: mujoco_py\generated\../pxd\mjmodel.pxd:180:8: 'mjJAC_DENSE' redeclared
+  warning: mujoco_py\generated\../pxd\mjmodel.pxd:181:8: 'mjJAC_SPARSE' redeclared
+  warning: mujoco_py\generated\../pxd\mjmodel.pxd:182:8: 'mjJAC_AUTO' redeclared
+  warning: mujoco_py\generated\../pxd\mjmodel.pxd:186:8: 'mjSOL_PGS' redeclared
+  warning: mujoco_py\generated\../pxd\mjmodel.pxd:187:8: 'mjSOL_CG' redeclared
+  warning: mujoco_py\generated\../pxd\mjmodel.pxd:188:8: 'mjSOL_NEWTON' redeclared
+  warning: mujoco_py\generated\../pxd\mjmodel.pxd:192:8: 'mjIMP_CONSTANT' redeclared
+  warning: mujoco_py\generated\../pxd\mjmodel.pxd:193:8: 'mjIMP_SIGMOID' redeclared
+  warning: mujoco_py\generated\../pxd\mjmodel.pxd:194:8: 'mjIMP_LINEAR' redeclared
+  warning: mujoco_py\generated\../pxd\mjmodel.pxd:195:8: 'mjIMP_USER' redeclared
+  warning: mujoco_py\generated\../pxd\mjmodel.pxd:199:8: 'mjREF_SPRING' redeclared
+  warning: mujoco_py\generated\../pxd\mjmodel.pxd:200:8: 'mjREF_USER' redeclared
+  warning: mujoco_py\generated\../pxd\mjmodel.pxd:204:8: 'mjEQ_CONNECT' redeclared
+  warning: mujoco_py\generated\../pxd\mjmodel.pxd:205:8: 'mjEQ_WELD' redeclared
+  warning: mujoco_py\generated\../pxd\mjmodel.pxd:206:8: 'mjEQ_JOINT' redeclared
+  warning: mujoco_py\generated\../pxd\mjmodel.pxd:207:8: 'mjEQ_TENDON' redeclared
+  warning: mujoco_py\generated\../pxd\mjmodel.pxd:208:8: 'mjEQ_DISTANCE' redeclared
+  warning: mujoco_py\generated\../pxd\mjmodel.pxd:212:8: 'mjWRAP_NONE' redeclared
+  warning: mujoco_py\generated\../pxd\mjmodel.pxd:213:8: 'mjWRAP_JOINT' redeclared
+  warning: mujoco_py\generated\../pxd\mjmodel.pxd:214:8: 'mjWRAP_PULLEY' redeclared
+  warning: mujoco_py\generated\../pxd\mjmodel.pxd:215:8: 'mjWRAP_SITE' redeclared
+  warning: mujoco_py\generated\../pxd\mjmodel.pxd:216:8: 'mjWRAP_SPHERE' redeclared
+  warning: mujoco_py\generated\../pxd\mjmodel.pxd:217:8: 'mjWRAP_CYLINDER' redeclared
+  warning: mujoco_py\generated\../pxd\mjmodel.pxd:221:8: 'mjTRN_JOINT' redeclared
+  warning: mujoco_py\generated\../pxd\mjmodel.pxd:222:8: 'mjTRN_JOINTINPARENT' redeclared
+  warning: mujoco_py\generated\../pxd\mjmodel.pxd:223:8: 'mjTRN_SLIDERCRANK' redeclared
+  warning: mujoco_py\generated\../pxd\mjmodel.pxd:224:8: 'mjTRN_TENDON' redeclared
+  warning: mujoco_py\generated\../pxd\mjmodel.pxd:225:8: 'mjTRN_SITE' redeclared
+  warning: mujoco_py\generated\../pxd\mjmodel.pxd:227:8: 'mjTRN_UNDEFINED' redeclared
+  warning: mujoco_py\generated\../pxd\mjmodel.pxd:231:8: 'mjDYN_NONE' redeclared
+  warning: mujoco_py\generated\../pxd\mjmodel.pxd:232:8: 'mjDYN_INTEGRATOR' redeclared
+  warning: mujoco_py\generated\../pxd\mjmodel.pxd:233:8: 'mjDYN_FILTER' redeclared
+  warning: mujoco_py\generated\../pxd\mjmodel.pxd:234:8: 'mjDYN_USER' redeclared
+  warning: mujoco_py\generated\../pxd\mjmodel.pxd:238:8: 'mjGAIN_FIXED' redeclared
+  warning: mujoco_py\generated\../pxd\mjmodel.pxd:239:8: 'mjGAIN_USER' redeclared
+  warning: mujoco_py\generated\../pxd\mjmodel.pxd:243:8: 'mjBIAS_NONE' redeclared
+  warning: mujoco_py\generated\../pxd\mjmodel.pxd:244:8: 'mjBIAS_AFFINE' redeclared
+  warning: mujoco_py\generated\../pxd\mjmodel.pxd:245:8: 'mjBIAS_USER' redeclared
+  warning: mujoco_py\generated\../pxd\mjmodel.pxd:249:8: 'mjOBJ_UNKNOWN' redeclared
+  warning: mujoco_py\generated\../pxd\mjmodel.pxd:250:8: 'mjOBJ_BODY' redeclared
+  warning: mujoco_py\generated\../pxd\mjmodel.pxd:251:8: 'mjOBJ_XBODY' redeclared
+  warning: mujoco_py\generated\../pxd\mjmodel.pxd:252:8: 'mjOBJ_JOINT' redeclared
+  warning: mujoco_py\generated\../pxd\mjmodel.pxd:253:8: 'mjOBJ_DOF' redeclared
+  warning: mujoco_py\generated\../pxd\mjmodel.pxd:254:8: 'mjOBJ_GEOM' redeclared
+  warning: mujoco_py\generated\../pxd\mjmodel.pxd:255:8: 'mjOBJ_SITE' redeclared
+  warning: mujoco_py\generated\../pxd\mjmodel.pxd:256:8: 'mjOBJ_CAMERA' redeclared
+  warning: mujoco_py\generated\../pxd\mjmodel.pxd:257:8: 'mjOBJ_LIGHT' redeclared
+  warning: mujoco_py\generated\../pxd\mjmodel.pxd:258:8: 'mjOBJ_MESH' redeclared
+  warning: mujoco_py\generated\../pxd\mjmodel.pxd:259:8: 'mjOBJ_HFIELD' redeclared
+  warning: mujoco_py\generated\../pxd\mjmodel.pxd:260:8: 'mjOBJ_TEXTURE' redeclared
+  warning: mujoco_py\generated\../pxd\mjmodel.pxd:261:8: 'mjOBJ_MATERIAL' redeclared
+  warning: mujoco_py\generated\../pxd\mjmodel.pxd:262:8: 'mjOBJ_PAIR' redeclared
+  warning: mujoco_py\generated\../pxd\mjmodel.pxd:263:8: 'mjOBJ_EXCLUDE' redeclared
+  warning: mujoco_py\generated\../pxd\mjmodel.pxd:264:8: 'mjOBJ_EQUALITY' redeclared
+  warning: mujoco_py\generated\../pxd\mjmodel.pxd:265:8: 'mjOBJ_TENDON' redeclared
+  warning: mujoco_py\generated\../pxd\mjmodel.pxd:266:8: 'mjOBJ_ACTUATOR' redeclared
+  warning: mujoco_py\generated\../pxd\mjmodel.pxd:267:8: 'mjOBJ_SENSOR' redeclared
+  warning: mujoco_py\generated\../pxd\mjmodel.pxd:268:8: 'mjOBJ_NUMERIC' redeclared
+  warning: mujoco_py\generated\../pxd\mjmodel.pxd:269:8: 'mjOBJ_TEXT' redeclared
+  warning: mujoco_py\generated\../pxd\mjmodel.pxd:270:8: 'mjOBJ_TUPLE' redeclared
+  warning: mujoco_py\generated\../pxd\mjmodel.pxd:271:8: 'mjOBJ_KEY' redeclared
+  warning: mujoco_py\generated\../pxd\mjmodel.pxd:275:8: 'mjCNSTR_EQUALITY' redeclared
+  warning: mujoco_py\generated\../pxd\mjmodel.pxd:276:8: 'mjCNSTR_FRICTION_DOF' redeclared
+  warning: mujoco_py\generated\../pxd\mjmodel.pxd:277:8: 'mjCNSTR_FRICTION_TENDON' redeclared
+  warning: mujoco_py\generated\../pxd\mjmodel.pxd:278:8: 'mjCNSTR_LIMIT_JOINT' redeclared
+  warning: mujoco_py\generated\../pxd\mjmodel.pxd:279:8: 'mjCNSTR_LIMIT_TENDON' redeclared
+  warning: mujoco_py\generated\../pxd\mjmodel.pxd:280:8: 'mjCNSTR_CONTACT_FRICTIONLESS' redeclared
+  warning: mujoco_py\generated\../pxd\mjmodel.pxd:281:8: 'mjCNSTR_CONTACT_PYRAMIDAL' redeclared
+  warning: mujoco_py\generated\../pxd\mjmodel.pxd:282:8: 'mjCNSTR_CONTACT_ELLIPTIC' redeclared
+  warning: mujoco_py\generated\../pxd\mjmodel.pxd:286:8: 'mjCNSTRSTATE_SATISFIED' redeclared
+  warning: mujoco_py\generated\../pxd\mjmodel.pxd:287:8: 'mjCNSTRSTATE_QUADRATIC' redeclared
+  warning: mujoco_py\generated\../pxd\mjmodel.pxd:288:8: 'mjCNSTRSTATE_LINEARNEG' redeclared
+  warning: mujoco_py\generated\../pxd\mjmodel.pxd:289:8: 'mjCNSTRSTATE_LINEARPOS' redeclared
+  warning: mujoco_py\generated\../pxd\mjmodel.pxd:290:8: 'mjCNSTRSTATE_CONE' redeclared
+  warning: mujoco_py\generated\../pxd\mjmodel.pxd:296:8: 'mjSENS_TOUCH' redeclared
+  warning: mujoco_py\generated\../pxd\mjmodel.pxd:297:8: 'mjSENS_ACCELEROMETER' redeclared
+  warning: mujoco_py\generated\../pxd\mjmodel.pxd:298:8: 'mjSENS_VELOCIMETER' redeclared
+  warning: mujoco_py\generated\../pxd\mjmodel.pxd:299:8: 'mjSENS_GYRO' redeclared
+  warning: mujoco_py\generated\../pxd\mjmodel.pxd:300:8: 'mjSENS_FORCE' redeclared
+  warning: mujoco_py\generated\../pxd\mjmodel.pxd:301:8: 'mjSENS_TORQUE' redeclared
+  warning: mujoco_py\generated\../pxd\mjmodel.pxd:302:8: 'mjSENS_MAGNETOMETER' redeclared
+  warning: mujoco_py\generated\../pxd\mjmodel.pxd:303:8: 'mjSENS_RANGEFINDER' redeclared
+  warning: mujoco_py\generated\../pxd\mjmodel.pxd:306:8: 'mjSENS_JOINTPOS' redeclared
+  warning: mujoco_py\generated\../pxd\mjmodel.pxd:307:8: 'mjSENS_JOINTVEL' redeclared
+  warning: mujoco_py\generated\../pxd\mjmodel.pxd:308:8: 'mjSENS_TENDONPOS' redeclared
+  warning: mujoco_py\generated\../pxd\mjmodel.pxd:309:8: 'mjSENS_TENDONVEL' redeclared
+  warning: mujoco_py\generated\../pxd\mjmodel.pxd:310:8: 'mjSENS_ACTUATORPOS' redeclared
+  warning: mujoco_py\generated\../pxd\mjmodel.pxd:311:8: 'mjSENS_ACTUATORVEL' redeclared
+  warning: mujoco_py\generated\../pxd\mjmodel.pxd:312:8: 'mjSENS_ACTUATORFRC' redeclared
+  warning: mujoco_py\generated\../pxd\mjmodel.pxd:315:8: 'mjSENS_BALLQUAT' redeclared
+  warning: mujoco_py\generated\../pxd\mjmodel.pxd:316:8: 'mjSENS_BALLANGVEL' redeclared
+  warning: mujoco_py\generated\../pxd\mjmodel.pxd:319:8: 'mjSENS_FRAMEPOS' redeclared
+  warning: mujoco_py\generated\../pxd\mjmodel.pxd:320:8: 'mjSENS_FRAMEQUAT' redeclared
+  warning: mujoco_py\generated\../pxd\mjmodel.pxd:321:8: 'mjSENS_FRAMEXAXIS' redeclared
+  warning: mujoco_py\generated\../pxd\mjmodel.pxd:322:8: 'mjSENS_FRAMEYAXIS' redeclared
+  warning: mujoco_py\generated\../pxd\mjmodel.pxd:323:8: 'mjSENS_FRAMEZAXIS' redeclared
+  warning: mujoco_py\generated\../pxd\mjmodel.pxd:324:8: 'mjSENS_FRAMELINVEL' redeclared
+  warning: mujoco_py\generated\../pxd\mjmodel.pxd:325:8: 'mjSENS_FRAMEANGVEL' redeclared
+  warning: mujoco_py\generated\../pxd\mjmodel.pxd:326:8: 'mjSENS_FRAMELINACC' redeclared
+  warning: mujoco_py\generated\../pxd\mjmodel.pxd:327:8: 'mjSENS_FRAMEANGACC' redeclared
+  warning: mujoco_py\generated\../pxd\mjmodel.pxd:330:8: 'mjSENS_SUBTREECOM' redeclared
+  warning: mujoco_py\generated\../pxd\mjmodel.pxd:331:8: 'mjSENS_SUBTREELINVEL' redeclared
+  warning: mujoco_py\generated\../pxd\mjmodel.pxd:332:8: 'mjSENS_SUBTREEANGMOM' redeclared
+  warning: mujoco_py\generated\../pxd\mjmodel.pxd:335:8: 'mjSENS_USER' redeclared
+  warning: mujoco_py\generated\../pxd\mjmodel.pxd:339:8: 'mjSTAGE_NONE' redeclared
+  warning: mujoco_py\generated\../pxd\mjmodel.pxd:340:8: 'mjSTAGE_POS' redeclared
+  warning: mujoco_py\generated\../pxd\mjmodel.pxd:341:8: 'mjSTAGE_VEL' redeclared
+  warning: mujoco_py\generated\../pxd\mjmodel.pxd:342:8: 'mjSTAGE_ACC' redeclared
+  warning: mujoco_py\generated\../pxd\mjmodel.pxd:346:8: 'mjDATATYPE_REAL' redeclared
+  warning: mujoco_py\generated\../pxd\mjmodel.pxd:347:8: 'mjDATATYPE_POSITIVE' redeclared
+  warning: mujoco_py\generated\../pxd\mjmodel.pxd:348:8: 'mjDATATYPE_AXIS' redeclared
+  warning: mujoco_py\generated\../pxd\mjmodel.pxd:349:8: 'mjDATATYPE_QUAT' redeclared
+  Removing old mujoco_py cext C:\Users\HRI\AppData\Local\Temp\pip-install-aan2846c\mujoco-py_3ab1539c49264543b93970cc83c09d04\mujo
+co_py\generated\cymj_1.50.1.68_39_windowsextensionbuilder_39.so
+  Compiling C:\Users\HRI\AppData\Local\Temp\pip-install-aan2846c\mujoco-py_3ab1539c49264543b93970cc83c09d04\mujoco_py\cymj.pyx bec
+ause it changed.
+  [1/1] Cythonizing C:\Users\HRI\AppData\Local\Temp\pip-install-aan2846c\mujoco-py_3ab1539c49264543b93970cc83c09d04\mujoco_py\cymj
+.pyx
+  running build_ext
+  building 'mujoco_py.cymj' extension
+  creating C:\Users\HRI\AppData\Local\Temp\pip-install-aan2846c\mujoco-py_3ab1539c49264543b93970cc83c09d04\mujoco_py\generated\_py
+xbld_1.50.1.68_39_windowsextensionbuilder
+  creating C:\Users\HRI\AppData\Local\Temp\pip-install-aan2846c\mujoco-py_3ab1539c49264543b93970cc83c09d04\mujoco_py\generated\_py
+xbld_1.50.1.68_39_windowsextensionbuilder\temp.win-amd64-3.9
+  creating C:\Users\HRI\AppData\Local\Temp\pip-install-aan2846c\mujoco-py_3ab1539c49264543b93970cc83c09d04\mujoco_py\generated\_py
+xbld_1.50.1.68_39_windowsextensionbuilder\temp.win-amd64-3.9\Release
+  creating C:\Users\HRI\AppData\Local\Temp\pip-install-aan2846c\mujoco-py_3ab1539c49264543b93970cc83c09d04\mujoco_py\generated\_py
+xbld_1.50.1.68_39_windowsextensionbuilder\temp.win-amd64-3.9\Release\Users
+  creating C:\Users\HRI\AppData\Local\Temp\pip-install-aan2846c\mujoco-py_3ab1539c49264543b93970cc83c09d04\mujoco_py\generated\_py
+xbld_1.50.1.68_39_windowsextensionbuilder\temp.win-amd64-3.9\Release\Users\HRI
+  creating C:\Users\HRI\AppData\Local\Temp\pip-install-aan2846c\mujoco-py_3ab1539c49264543b93970cc83c09d04\mujoco_py\generated\_py
+xbld_1.50.1.68_39_windowsextensionbuilder\temp.win-amd64-3.9\Release\Users\HRI\AppData
+  creating C:\Users\HRI\AppData\Local\Temp\pip-install-aan2846c\mujoco-py_3ab1539c49264543b93970cc83c09d04\mujoco_py\generated\_py
+xbld_1.50.1.68_39_windowsextensionbuilder\temp.win-amd64-3.9\Release\Users\HRI\AppData\Local
+  creating C:\Users\HRI\AppData\Local\Temp\pip-install-aan2846c\mujoco-py_3ab1539c49264543b93970cc83c09d04\mujoco_py\generated\_py
+xbld_1.50.1.68_39_windowsextensionbuilder\temp.win-amd64-3.9\Release\Users\HRI\AppData\Local\Temp
+  creating C:\Users\HRI\AppData\Local\Temp\pip-install-aan2846c\mujoco-py_3ab1539c49264543b93970cc83c09d04\mujoco_py\generated\_py
+xbld_1.50.1.68_39_windowsextensionbuilder\temp.win-amd64-3.9\Release\Users\HRI\AppData\Local\Temp\pip-install-aan2846c
+  creating C:\Users\HRI\AppData\Local\Temp\pip-install-aan2846c\mujoco-py_3ab1539c49264543b93970cc83c09d04\mujoco_py\generated\_py
+xbld_1.50.1.68_39_windowsextensionbuilder\temp.win-amd64-3.9\Release\Users\HRI\AppData\Local\Temp\pip-install-aan2846c\mujoco-py_3
+ab1539c49264543b93970cc83c09d04
+  error: could not create 'C:\Users\HRI\AppData\Local\Temp\pip-install-aan2846c\mujoco-py_3ab1539c49264543b93970cc83c09d04\mujoco_
+py\generated\_pyxbld_1.50.1.68_39_windowsextensionbuilder\temp.win-amd64-3.9\Release\Users\HRI\AppData\Local\Temp\pip-install-aan2
+846c\mujoco-py_3ab1539c49264543b93970cc83c09d04': The system cannot find the path specified
+  ----------------------------------------
+  ERROR: Failed building wheel for mujoco-py
+  Running setup.py clean for mujoco-py
+Failed to build mujoco-py
+Installing collected packages: mujoco-py
+    Running setup.py install for mujoco-py ... error
+n2846c\mujoco-py_3ab1539c49264543b93970cc83c09d04': The system cannot find the path specified
+    ----------------------------------------
+ERROR: Command errored out with exit status 1: 'C:\Users\HRI\anaconda3\envs\PD803_COURSE\python.exe' -u -c 'import io, os, sys, se
+tuptools, tokenize; sys.argv[0] = '"'"'C:\\Users\\HRI\\AppData\\Local\\Temp\\pip-install-aan2846c\\mujoco-py_3ab1539c49264543b9397
+0cc83c09d04\\setup.py'"'"'; __file__='"'"'C:\\Users\\HRI\\AppData\\Local\\Temp\\pip-install-aan2846c\\mujoco-py_3ab1539c49264543b9
+3970cc83c09d04\\setup.py'"'"';f = getattr(tokenize, '"'"'open'"'"', open)(__file__) if os.path.exists(__file__) else io.StringIO('
+"'"'from setuptools import setup; setup()'"'"');code = f.read().replace('"'"'\r\n'"'"', '"'"'\n'"'"');f.close();exec(compile(code,
+ __file__, '"'"'exec'"'"'))' install --record 'C:\Users\HRI\AppData\Local\Temp\pip-record-0nagzr4g\install-record.txt' --single-ve
+rsion-externally-managed --compile --install-headers 'C:\Users\HRI\anaconda3\envs\PD803_COURSE\Include\mujoco-py' Check the logs f
+or full command output.

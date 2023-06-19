@@ -1,0 +1,20 @@
+---
+#hyperparameters
+
+env: CartPole-v1
+lr: 0.0001
+gamma: [0.98]
+max_episode: 10000
+# batch_size: [32, 64, 128, 256]
+buffer_limit: [50000 100000]
+initial_exp: [1000]
+n_rollout: [10, 20, 30]
+metric: score
+mode: max
+num_samples: 1
+
+# training variables
+WB_API_KEY: 4e3347402696210ecee7127921ff40f175a18270
+project: A2C-Cart-Pole-Tuning-v2
+
+...
